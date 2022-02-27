@@ -9,6 +9,7 @@ from docx.shared import Length
 from docx.enum.text import WD_TAB_ALIGNMENT, WD_TAB_LEADER
 from docx.enum.text import WD_LINE_SPACING
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx2pdf import convert
 
 import os
 import string
@@ -407,14 +408,13 @@ paragraph_format.alignment = 0  # left
 #   Done
 #   Need to add some file name format like _d/m/y
 #
-document.save('บันทึกข้อความอาหารกลางวันประถม(new).docx')
+fileName = 'บันทึกข้อความอาหารกลางวันประถม(new).docx'
+document.save(fileName)
 
 #
 #   Convert to pdf ?
 #
-'''
-    some code here . . . 
-'''
+convert(fileName)
 
 #
 #   note to me
