@@ -11,6 +11,7 @@ from docx.enum.text import WD_LINE_SPACING
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx2pdf import convert
 
+from  gui import *
 import os
 import string
 
@@ -51,8 +52,8 @@ paragraph_format.space_after = Pt(0)
 
 #
 #   Note: alignment object mode.
-#       0: for left
-#       1: for center
+#       0: left
+#       1: center
 #       2: right
 #       3: justify
 #       etc: https://python-docx.readthedocs.io/en/latest/api/enum/WdAlignParagraph.html
